@@ -1,0 +1,389 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kreat FX · Escuela de Artes y Oficios Audiovisuales</title>
+<meta name="description" content="Escuela de Artes y Oficios Audiovisuales de Kreat FX: caracterización y maquillaje FX, props y criaturas, vestuarios especiales. Próximamente en 2027 en Madrid.">
+<meta name="theme-color" content="#0b0a09">
+<meta property="og:title" content="Kreat FX · Escuela de Artes y Oficios Audiovisuales">
+<meta property="og:description" content="Aprende a crear monstruos, personajes y criaturas con más de 35 años de oficio. Próximamente 2027.">
+<meta property="og:image" content="assets/img/ale-fito.webp">
+<link rel="icon" href="assets/img/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;800&family=Permanent+Marker&family=Stardos+Stencil:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="grain" aria-hidden="true"></div>
+
+<!-- NAV -->
+<header class="nav" id="nav">
+  <a href="#top" class="nav__logo" aria-label="Kreat FX">
+    <img src="assets/img/logo.png" alt="Kreat FX" width="150" height="49">
+    <span class="nav__school" data-i18n="nav.school">Escuela</span>
+  </a>
+  <nav class="nav__links" id="navLinks">
+    <a href="#escuela" data-i18n="nav.why">La escuela</a>
+    <a href="#cursos" data-i18n="nav.courses">Cursos</a>
+    <a href="#metodo" data-i18n="nav.method">Método</a>
+    <a href="#maestros" data-i18n="nav.masters">Maestros</a>
+    <a href="#inscripcion" class="nav__cta" data-i18n="nav.signup">Apúntate</a>
+  </nav>
+  <div class="lang" role="group" aria-label="Idioma / Language">
+    <button type="button" data-lang="es" aria-pressed="true">ES</button>
+    <span aria-hidden="true">/</span>
+    <button type="button" data-lang="en" aria-pressed="false">EN</button>
+  </div>
+  <button class="burger" id="burger" aria-label="Menú" aria-expanded="false"><span></span><span></span></button>
+</header>
+
+<main id="top">
+
+<!-- HERO -->
+<section class="hero">
+  <video class="hero__video" autoplay muted loop playsinline poster="assets/video/hero.jpg">
+    <source src="assets/video/hero.mp4" type="video/mp4">
+  </video>
+  <div class="hero__shade" aria-hidden="true"></div>
+  <div class="hero__inner">
+    <p class="eyebrow" data-i18n="hero.eyebrow">Kreat FX presenta</p>
+    <h1 class="hero__title">
+      <span data-i18n="hero.t1">Escuela de</span>
+      <span class="hero__big" data-i18n="hero.t2">Artes y Oficios</span>
+      <span data-i18n="hero.t3">Audiovisuales</span>
+    </h1>
+    <p class="hero__lead" data-i18n="hero.lead">Aprende a crear monstruos, criaturas y personajes con quienes llevan más de 35 años haciéndolo para cine, televisión y teatro.</p>
+    <div class="hero__ctas">
+      <a href="#inscripcion" class="btn btn--blood" data-i18n="hero.cta1">Me interesa</a>
+      <a href="#cursos" class="btn btn--ghost" data-i18n="hero.cta2">Ver los cursos</a>
+    </div>
+    <a href="#patrocinador" class="hero__sponsor">
+      <span data-i18n="sponsor.by">Patrocinado por</span>
+      <span class="feroca feroca--sm"><img class="feroca__img" src="assets/img/feroca-logo-white.svg" alt="Feroca" onerror="this.remove()"><span class="feroca__word" aria-hidden="true">FEROCA</span></span>
+    </a>
+  </div>
+  <div class="stamp" aria-hidden="true">
+    <span class="stamp__top" data-i18n="stamp.top">Próximamente</span>
+    <span class="stamp__year">2027</span>
+    <span class="stamp__bot">Madrid</span>
+  </div>
+  <a href="#escuela" class="scroll-cue" aria-label="Scroll"><span></span></a>
+</section>
+
+<!-- WHY -->
+<section class="section why" id="escuela">
+  <div class="wrap why__grid">
+    <div class="why__text reveal">
+      <p class="kicker" data-i18n="why.kicker">01 · La escuela</p>
+      <h2 data-i18n="why.title">Este oficio se aprende <em>con las manos</em></h2>
+      <p class="big" data-i18n="why.p1">Creemos que nuestra profesión es un arte que debe aprenderse a través de la práctica, junto a maestros profesionales del medio que te guíen y te den la teoría necesaria desde su propia experiencia en rodajes, platós y escenarios.</p>
+    </div>
+    <div class="orbit reveal" aria-hidden="true">
+      <div class="orbit__core"><img src="assets/img/logo.png" alt=""></div>
+      <div class="orbit__ring">
+        <span style="--i:0" data-i18n="dept.makeup">Maquillaje FX</span>
+        <span style="--i:1" data-i18n="dept.creatures">Criaturas</span>
+        <span style="--i:2" data-i18n="dept.costume">Vestuario</span>
+        <span style="--i:3" data-i18n="dept.props">Props</span>
+        <span style="--i:4" data-i18n="dept.sets">Escenografía</span>
+        <span style="--i:5" data-i18n="dept.anim">Animatrónica</span>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<!-- COURSES -->
+<section class="section courses" id="cursos">
+  <div class="wrap">
+    <div class="section__head reveal">
+      <p class="kicker" data-i18n="courses.kicker">02 · Los cursos</p>
+      <h2 data-i18n="courses.title">Tres talleres. <em>Infinitas criaturas.</em></h2>
+      <p class="disclaimer" data-i18n="courses.disclaimer">Los cursos están sujetos a cambios.</p>
+    </div>
+
+    <!-- Course 1 -->
+    <article class="course reveal">
+      <div class="course__media">
+        <img src="assets/img/curso-caracterizacion.webp" alt="" loading="lazy">
+        <span class="badge" data-i18n="badge.soon">Coming in 2027</span>
+      </div>
+      <div class="course__body">
+        <p class="course__tag" data-i18n="c1.tag">Maquillaje · Caracterización</p>
+        <h3 data-i18n="c1.title">Caracterización y Maquillaje FX</h3>
+        <p data-i18n="c1.desc">Todo el proceso para la creación de personajes reales o de fantasía.</p>
+        <ol class="modules">
+          <li class="module"><b data-i18n="c1.m1">Diseño de personaje</b></li>
+          <li class="module"><b data-i18n="c1.m2">Life cast y escaneo 3D</b></li>
+          <li class="module"><b data-i18n="c1.m3">Escultura del personaje</b></li>
+          <li class="module"><b data-i18n="c1.m4">Distintos tipos de moldes</b></li>
+          <li class="module"><b data-i18n="c1.m5">Copias en diferentes materiales</b></li>
+          <li class="module"><b data-i18n="c1.m6">Aplicación del resultado final</b></li>
+        </ol>
+      </div>
+    </article>
+
+    <!-- Course 2 -->
+    <article class="course course--flip course--fit reveal">
+      <div class="course__media">
+        <img src="assets/img/curso-props.webp" alt="" loading="lazy">
+        <span class="badge" data-i18n="badge.soon">Coming in 2027</span>
+      </div>
+      <div class="course__body">
+        <p class="course__tag" data-i18n="c2.tag">Props · Criaturas · Dummies</p>
+        <h3 data-i18n="c2.title">Taller de Props y Creación de Criaturas</h3>
+        <p data-i18n="c2.desc">Fundamentos básicos de distintas técnicas de fabricación de elementos ficticios, títeres o dummies.</p>
+        <ol class="modules">
+          <li class="module"><b data-i18n="c2.m1">Conocimiento básico de distintas técnicas y herramientas</b></li>
+          <li class="module"><b data-i18n="c2.m2">Creación de elementos ficticios</b></li>
+          <li class="module"><b data-i18n="c2.m3">Diseño de un títere y conceptos básicos de animatrónica</b></li>
+          <li class="module"><b data-i18n="c2.m4">Creación de un dummy (animales o partes del cuerpo humano)</b></li>
+        </ol>
+      </div>
+    </article>
+
+    <!-- Course 3 -->
+    <article class="course reveal">
+      <div class="course__media">
+        <img src="assets/img/curso-vestuarios.webp" alt="" loading="lazy">
+        <span class="badge" data-i18n="badge.soon">Coming in 2027</span>
+      </div>
+      <div class="course__body">
+        <p class="course__tag" data-i18n="c3.tag">Criaturas · Títeres · Vestuario</p>
+        <h3 data-i18n="c3.title">Vestuarios Especiales</h3>
+        <p data-i18n="c3.desc">Trajes de criatura, títeres y piezas a gran escala.</p>
+        <ol class="modules">
+          <li class="module"><b data-i18n="c3.m1">Conceptos básicos de diseño</b></li>
+          <li class="module"><b data-i18n="c3.m2">Diseño 3D</b></li>
+          <li class="module"><b data-i18n="c3.m3">Patronaje</b></li>
+          <li class="module"><b data-i18n="c3.m4">Estudio de materiales y cómo trabajarlos</b></li>
+          <li class="module"><b data-i18n="c3.m5">Creación de un elemento</b></li>
+          <li class="module"><b data-i18n="c3.m6">Pintura y acabados</b></li>
+        </ol>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- SPONSOR -->
+<section class="sponsor" id="patrocinador">
+  <div class="wrap sponsor__inner">
+    <p class="sponsor__kicker reveal" data-i18n="sponsor.kicker">Patrocinador oficial de la escuela</p>
+    <a href="https://feroca.com/es/" target="_blank" rel="noopener" class="sponsor__logo reveal" aria-label="Feroca">
+      <span class="feroca feroca--xl"><img class="feroca__img" src="assets/img/feroca-logo.svg" alt="Feroca" onerror="this.remove()"><span class="feroca__word" aria-hidden="true">FEROCA</span></span>
+    </a>
+    <p class="sponsor__tagline reveal" data-i18n="sponsor.tagline">“Tus ideas, nuestros materiales”</p>
+    <p class="sponsor__text reveal" data-i18n="sponsor.text">Feroca, especialistas en materiales para moldes, efectos especiales, cosplay y escultura, es el patrocinador oficial de la Escuela de Artes y Oficios Audiovisuales de Kreat FX. Los materiales con los que darás vida a tus criaturas.</p>
+    <ul class="sponsor__chips reveal">
+      <li data-i18n="sponsor.m1">Siliconas</li>
+      <li data-i18n="sponsor.m2">Resinas</li>
+      <li data-i18n="sponsor.m3">Látex</li>
+      <li data-i18n="sponsor.m4">Fibra de vidrio</li>
+      <li data-i18n="sponsor.m5">Alginatos</li>
+      <li data-i18n="sponsor.m6">Espumas</li>
+    </ul>
+    <a href="https://feroca.com/es/" target="_blank" rel="noopener" class="btn btn--navy reveal" data-i18n="sponsor.cta">Descubre Feroca</a>
+  </div>
+</section>
+
+<!-- METHOD -->
+<section class="section method" id="metodo">
+  <div class="wrap">
+    <div class="section__head reveal">
+      <h2 data-i18n="method.title">Del concepto <em>al plató</em></h2>
+      <p class="lead" data-i18n="method.lead">Cada taller parte de un texto, un motivo o un guion. Los módulos trabajan interrelacionados, igual que los equipos de una producción.</p>
+    </div>
+    <ol class="steps">
+      <li class="step reveal"><span class="step__n">1</span><h4 data-i18n="method.s1">La idea</h4><p data-i18n="method.s1d">Entender qué necesita la historia, el director y la producción.</p></li>
+      <li class="step reveal"><span class="step__n">2</span><h4 data-i18n="method.s2">El diseño</h4><p data-i18n="method.s2d">Desarrollar el diseño según las necesidades de producción.</p></li>
+      <li class="step reveal"><span class="step__n">3</span><h4 data-i18n="method.s3">El taller</h4><p data-i18n="method.s3d">Esculpís, moldeáis, copiáis y pintáis con las herramientas y materiales del oficio.</p></li>
+      <li class="step reveal"><span class="step__n">4</span><h4 data-i18n="method.s4">La entrega</h4><p data-i18n="method.s4d">Entrega del producto final.</p></li>
+    </ol>
+    <div class="promise reveal">
+      <img src="assets/img/protesis-mesa.webp" alt="" loading="lazy">
+      <div>
+        <h3 data-i18n="method.pTitle">Lo que te garantiza el taller</h3>
+        <ul>
+          <li data-i18n="method.p1">Instrucción adecuada y aprendizaje real en el uso de herramientas.</li>
+          <li data-i18n="method.p2">Enseñanza por profesionales del oficio.</li>
+          <li data-i18n="method.p3">Visión de conjunto: sabrás cómo afecta tu trabajo a los demás departamentos.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MASTERS -->
+<section class="section masters" id="maestros">
+  <div class="wrap">
+    <div class="section__head reveal">
+      <h2 data-i18n="masters.title">Los padres <em>de las criaturas</em></h2>
+    </div>
+    <div class="masters__grid">
+      <figure class="masters__photo reveal">
+        <img src="assets/img/ale-fito.webp" alt="Alejandra Varela y Fito Dellibarda junto a Fújur" width="1054" height="1029" loading="lazy">
+        <figcaption data-i18n="masters.photoCap">Alejandra y Fito con Fújur, de <i>La Historia Interminable: El Musical</i>.</figcaption>
+      </figure>
+      <div class="masters__people">
+        <article class="person reveal">
+          <h3>Fito Dellibarda</h3>
+          <p class="role" data-i18n="fito.role">Director · Artista de FX de maquillaje · Diseñador de personajes</p>
+          <p data-i18n="fito.bio">Escenógrafo por la Escuela de Artes del Teatro de la Universidad del Salvador y diseñador gráfico e ilustrador por la Escuela Panamericana de Arte de Buenos Aires. En 1986 funda en Argentina su primer taller de efectos especiales. En el año 2000 llega a España como caracterizador para Antena 3 y en 2001 funda Kreat FX en Madrid junto con Alejandra Varela.</p>
+        </article>
+        <article class="person reveal">
+          <h3>Alejandra Varela</h3>
+          <p class="role" data-i18n="ale.role">Directora de producción</p>
+          <p data-i18n="ale.bio">Productora ejecutiva y directora de series y programas de televisión en Argentina, también productora periodística en radio. En 2001 llega a España contratada como directora por Antena 3 y cofunda Kreat FX, donde dirige la producción de efectos especiales hasta hoy.</p>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- REELS -->
+<section class="section reels" id="reels">
+  <div class="wrap">
+    <div class="section__head reveal">
+      <p class="kicker" data-i18n="reels.kicker">03 · Showreel</p>
+      <h2 data-i18n="reels.title">Dale al <em>play</em></h2>
+    </div>
+    <div class="reels__tabs" role="tablist">
+      <button role="tab" aria-selected="true" data-reel="reel-makeup" data-i18n="reels.makeup">Maquillaje y prótesis</button>
+      <button role="tab" aria-selected="false" data-reel="reel-sfx" data-i18n="reels.sfx">Special Makeup FX</button>
+      <button role="tab" aria-selected="false" data-reel="reel-animatronics" data-i18n="reels.anim">Animatrónica y títeres</button>
+      <button role="tab" aria-selected="false" data-reel="reel-costumes" data-i18n="reels.costumes">Vestuarios y máscaras</button>
+      <button role="tab" aria-selected="false" data-reel="reel-props" data-i18n="reels.props">Props</button>
+    </div>
+    <div class="reels__screen reveal">
+      <video id="reelPlayer" controls preload="none" playsinline poster="assets/img/sioux.webp">
+        <source src="assets/video/reel-makeup.mp4" type="video/mp4">
+      </video>
+    </div>
+  </div>
+</section>
+
+<!-- POSTERS -->
+<section class="posters">
+  <div class="wrap">
+    <p class="kicker center reveal" data-i18n="posters.kicker">Nuestro trabajo ha pasado por</p>
+    <div class="carousel" data-at-start="true">
+      <button type="button" class="carousel__btn carousel__btn--prev" aria-label="Anterior" data-dir="-1"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></button>
+      <div class="posters__row">
+        <img src="assets/img/poster-loving-pablo.webp" alt="Loving Pablo" loading="lazy">
+        <img src="assets/img/poster-ma-ma.webp" alt="Ma Ma" loading="lazy">
+        <img src="assets/img/poster-skylines.webp" alt="Skylines" loading="lazy">
+        <img src="assets/img/poster-los-33.webp" alt="The 33" loading="lazy">
+        <img src="assets/img/poster-historia.webp" alt="La Historia Interminable: El Musical" loading="lazy">
+        <img src="assets/img/poster-caotica-ana.webp" alt="Caótica Ana" loading="lazy">
+        <img src="assets/img/poster-nouveau-testament.webp" alt="Le Tout Nouveau Testament" loading="lazy">
+        <img src="assets/img/poster-apocalipsis.webp" alt="Apocalipsis: Circo de los Horrores" loading="lazy">
+        <img src="assets/img/poster-daryl-dixon.webp" alt="The Walking Dead: Daryl Dixon" loading="lazy">
+        <img src="assets/img/poster-above-below.webp" alt="Above &amp; Below" loading="lazy">
+        <img src="assets/img/poster-inquilina.webp" alt="La Inquilina" loading="lazy">
+        <img src="assets/img/poster-esperanca.webp" alt="Esperança" loading="lazy">
+      </div>
+      <button type="button" class="carousel__btn carousel__btn--next" aria-label="Siguiente" data-dir="1"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></button>
+    </div>
+    <p class="carousel__hint" aria-hidden="true"><span data-i18n="posters.hint">Desliza para ver más</span> <i>→</i></p>
+  </div>
+</section>
+
+<!-- RAFFLE FORM -->
+<section class="section raffle" id="inscripcion">
+  <div class="raffle__bg" aria-hidden="true"></div>
+  <div class="wrap raffle__grid">
+    <div class="raffle__pitch reveal">
+      <p class="kicker" data-i18n="signup.kicker">04 · Inscripción</p>
+      <h2 data-i18n="signup.title">Sé de los <em>primeros</em></h2>
+      <p class="big" data-i18n="signup.p1">Déjanos tus datos y dinos qué cursos te interesan. Te avisaremos antes que a nadie cuando anunciemos fechas, plazas y precios.</p>
+      <ul class="ticks">
+        <li data-i18n="signup.t1">Sin compromiso</li>
+        <li data-i18n="signup.t2">Acceso prioritario a la matrícula 2027</li>
+        <li data-i18n="signup.t3">Noticias del taller, sin spam</li>
+      </ul>
+      <div class="ticket" aria-hidden="true">
+        <span class="ticket__a">ADMIT ONE</span>
+        <span class="ticket__b">KREAT FX · 2027</span>
+        <span class="ticket__c" data-i18n="signup.ticket">Me interesa</span>
+      </div>
+    </div>
+
+    <form class="form reveal" id="signupForm" novalidate>
+      <input type="text" name="_honey" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <div class="field">
+        <label for="f-name" data-i18n="form.name">Nombre y apellidos</label>
+        <input id="f-name" name="nombre" type="text" required autocomplete="name">
+      </div>
+      <div class="field-row">
+        <div class="field">
+          <label for="f-email" data-i18n="form.email">Email</label>
+          <input id="f-email" name="email" type="email" required autocomplete="email">
+        </div>
+        <div class="field">
+          <label for="f-phone" data-i18n="form.phone">Teléfono (opcional)</label>
+          <input id="f-phone" name="telefono" type="tel" autocomplete="tel">
+        </div>
+      </div>
+      <div class="field-row">
+        <div class="field">
+          <label for="f-city" data-i18n="form.city">Ciudad y país</label>
+          <input id="f-city" name="ciudad" type="text" autocomplete="address-level2">
+        </div>
+        <div class="field">
+          <label for="f-level" data-i18n="form.level">Tu experiencia</label>
+          <select id="f-level" name="experiencia">
+            <option value="Ninguna" data-i18n="form.lv0">Empiezo de cero</option>
+            <option value="Aficionado" data-i18n="form.lv1">Aficionado/a</option>
+            <option value="Estudiante" data-i18n="form.lv2">Estudiante</option>
+            <option value="Profesional" data-i18n="form.lv3">Profesional del sector</option>
+          </select>
+        </div>
+      </div>
+      <fieldset class="field">
+        <legend data-i18n="form.courses">¿Qué cursos te interesan?</legend>
+        <div class="chips">
+          <label class="chip"><input type="checkbox" name="cursos" value="Caracterización y Maquillaje FX"><span data-i18n="c1.title">Caracterización y Maquillaje FX</span></label>
+          <label class="chip"><input type="checkbox" name="cursos" value="Taller de Props y Creación de Criaturas"><span data-i18n="c2.title">Taller de Props y Creación de Criaturas</span></label>
+          <label class="chip"><input type="checkbox" name="cursos" value="Vestuarios Especiales"><span data-i18n="c3.title">Vestuarios Especiales</span></label>
+        </div>
+        <p class="error" id="coursesError" data-i18n="form.errCourses" hidden>Elige al menos un curso.</p>
+      </fieldset>
+      <div class="field">
+        <label for="f-msg" data-i18n="form.msg">¿Algo que quieras contarnos? (opcional)</label>
+        <textarea id="f-msg" name="mensaje" rows="3"></textarea>
+      </div>
+      <label class="check">
+        <input type="checkbox" name="acepto" required>
+        <span data-i18n="form.consent">Acepto que Kreat FX use mis datos para enviarme información sobre la escuela y sus cursos. Puedo pedir que los borren en cualquier momento escribiendo a <a href="mailto:info@kreatfx.com">info@kreatfx.com</a>.</span>
+      </label>
+      <button class="btn btn--blood btn--full" type="submit" id="submitBtn">
+        <span data-i18n="form.submit">Quiero apuntarme</span>
+      </button>
+      <p class="form__status" id="formStatus" role="status" aria-live="polite"></p>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap footer__grid">
+    <img src="assets/img/logo.png" alt="Kreat FX" class="footer__logo" loading="lazy">
+    <div>
+      <p class="footer__claim" data-i18n="footer.claim">Escuela de Artes y Oficios Audiovisuales · Madrid · 2027</p>
+      <p><a href="mailto:info@kreatfx.com" class="footer__mail">info@kreatfx.com</a></p>
+    </div>
+    <a href="https://feroca.com/es/" target="_blank" rel="noopener" class="footer__sponsor">
+      <span data-i18n="sponsor.official">Patrocinador oficial</span>
+      <span class="feroca feroca--md"><img class="feroca__img" src="assets/img/feroca-logo-white.svg" alt="Feroca" onerror="this.remove()"><span class="feroca__word" aria-hidden="true">FEROCA</span></span>
+    </a>
+    <p class="footer__small">© <span id="year"></span> Kreat FX · <span data-i18n="footer.rights">Todas las imágenes pertenecen a trabajos realizados por Kreat FX.</span></p>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
